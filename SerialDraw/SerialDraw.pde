@@ -14,7 +14,7 @@ void setup() {
 }
 
 void draw() {
-  while(serial.available() > 0) {
+  while(serial.available() >= 2) {
     for (int i=0;i<2;i++) {
       pos[i] = serial.read();
     }
